@@ -14,10 +14,13 @@ A Spring bean is a Java object that is managed by the Spring IoC container. It i
 
 For example, the following bean definition will create a bean with the name "myBean" and the class "MyBean":
 
+```
 <bean id="myBean" class="MyBean">
+```
 
 The following example shows how to inject a Spring bean into another bean:
 
+```
 <bean id="myDependency" class="MyDependency">
 
 <bean id="myBean" class="MyBean">
@@ -25,6 +28,7 @@ The following example shows how to inject a Spring bean into another bean:
 <property name="myDependency" ref="myDependency"/>
 
 </bean>
+```
 
 ## Dependency Injection
 
