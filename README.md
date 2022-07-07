@@ -8,6 +8,24 @@ There are four main annotations in Spring: @Component, @Repository, @Service, an
 
 Each of these annotations has a corresponding XML element that can be used for configuring Spring beans.
 
+## Spring bean
+
+A Spring bean is a Java object that is managed by the Spring IoC container. It is created and initialized during the container startup, and can be injected into other beans that are managed by the container.
+
+For example, the following bean definition will create a bean with the name "myBean" and the class "MyBean":
+
+<bean id="myBean" class="MyBean">
+
+The following example shows how to inject a Spring bean into another bean:
+
+<bean id="myDependency" class="MyDependency">
+
+<bean id="myBean" class="MyBean">
+
+<property name="myDependency" ref="myDependency"/>
+
+</bean>
+
 ## Dependency Injection
 
 Dependency injection is a technique for passing dependencies to a class through its constructor or setter methods. This allows the dependencies to be injected at runtime, rather than being hard-coded into the class.
