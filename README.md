@@ -1,10 +1,23 @@
 # Spring Framework
 
+# OOP Paradigms
+
+There are three major OOP paradigms:
+
+1. Encapsulation: This is the most basic principle of OOP. It involves keeping data and code together in an object, and hiding the implementation details from the outside world. This allows for code reuse and makes code more maintainable.
+
+2. Inheritance: This is a powerful feature of OOP that allows one object to inherit the properties of another. This can be used to create hierarchical class structures, and to reuse code.
+
+3. Polymorphism: This is the ability of an object to take on different forms. This can be achieved through overloading or overriding methods, or by using interfaces.
+
 ## Annotations
 
 There are four main annotations in Spring: @Component, @Repository, @Service, and @Controller. These annotations are used to mark classes as Spring beans, which are then managed by the Spring framework.
 
-@Component is the most general annotation and can be used for any type of class. @Repository is used for classes that perform data access operations. @Service is used for classes that provide business services. @Controller is used for classes that are part of the Spring MVC framework.
+@Component - is the most general annotation and can be used for any type of class. 
+@Repository - is used for classes that perform data access operations. 
+@Service - is used for classes that provide business services. 
+@Controller -  is used for classes that are part of the Spring MVC framework.
 
 Each of these annotations has a corresponding XML element that can be used for configuring Spring beans.
 
