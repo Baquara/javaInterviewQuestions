@@ -61,7 +61,7 @@ Each of these annotations has a corresponding XML element that can be used for c
 
 ## Spring bean
 
-A Spring bean is a Java object that is managed by the Spring IoC container. It is created and initialized during the container startup, and can be injected into other beans that are managed by the container.
+A Spring bean is a Java object that is managed by the Spring IoC container (Inversion of Control is a principle in software engineering which transfers the control of objects or portions of a program to a container or framework). It is created and initialized during the container startup, and can be injected into other beans that are managed by the container.
 
 For example, the following bean definition will create a bean with the name "myBean" and the class "MyBean":
 
