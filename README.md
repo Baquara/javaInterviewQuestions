@@ -2,7 +2,7 @@
 
 ## Abstract Classes
 
-An abstract class is a class that cannot be instantiated. Abstract classes can contain both abstract and concrete methods. Abstract classes must be subclassed in order to be used.
+An abstract class is a class that cannot be instantiated. Abstract classes can contain both abstract and concrete methods. An abstract method is a method that is declared, but not implemented in the code. A concrete method is a method that is declared and implemented in the code. Abstract classes must be subclassed in order to be used.
 
 Abstract classes are used to provide a common base class for a group of classes. They are also used to provide default implementations of methods that can be overridden by subclasses.
 
