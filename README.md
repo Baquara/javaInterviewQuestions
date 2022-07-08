@@ -38,6 +38,16 @@ There are three major OOP paradigms:
 
 3. Polymorphism: This is the ability of an object to take on different forms. This can be achieved through overloading or overriding methods, or by using interfaces.
 
+#REST
+
+GET - Used to request data from a specified resource
+
+POST - Used to send data to a specified resource to be processed
+
+PUT - Used to send data to a specified resource to be updated
+
+DELETE - Used to request that a specified resource be deleted
+
 ## Annotations
 
 There are four main annotations in Spring: @Component, @Repository, @Service, and @Controller. These annotations are used to mark classes as Spring beans, which are then managed by the Spring framework.
