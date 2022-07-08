@@ -53,8 +53,11 @@ DELETE - Used to request that a specified resource be deleted
 There are four main annotations in Spring: @Component, @Repository, @Service, and @Controller. These annotations are used to mark classes as Spring beans, which are then managed by the Spring framework.
 
 @Component - is the most general annotation and can be used for any type of class. 
+
 @Repository - is used for classes that perform data access operations. 
+
 @Service - is used for classes that provide business services. 
+
 @Controller -  is used for classes that are part of the Spring MVC framework.
 
 Each of these annotations has a corresponding XML element that can be used for configuring Spring beans.
