@@ -87,6 +87,13 @@ Dependency injection is a technique for passing dependencies to a class through 
 
 Spring uses dependency injection to provide dependencies to its beans. When a Spring bean is created, its dependencies are injected into it. This allows the beans to be decoupled from their dependencies, and makes it easy to change the dependencies without changing the beans.
 
+In case of Field-Based DI, we can inject the dependencies by marking them with an @Autowired annotation:
+
+public class Store {
+    @Autowired
+    private Item item; 
+}
+
 ## Spring Security
 
 Spring Security is a framework for providing security to Java applications. It offers a number of features, including authentication, authorization, and access control. Spring Security can be used to secure web applications, REST services, and even individual methods.
