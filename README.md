@@ -1,4 +1,32 @@
-# Spring Framework
+# Abstract classses and interfaces
+
+## Abstract Classes
+
+An abstract class is a class that cannot be instantiated. Abstract classes can contain both abstract and concrete methods. Abstract classes must be subclassed in order to be used.
+
+Abstract classes are used to provide a common base class for a group of classes. They are also used to provide default implementations of methods that can be overridden by subclasses.
+
+Abstract classes are classes that cannot be instantiated, but can be subclassed. 
+
+Abstract classes are typically used to define a base class from which other classes can inherit. For example, an abstract class might define a basic shape, with subclasses defining specific shapes like circles, squares, and triangles.
+
+## Interfaces
+
+An interface is a type that can be implemented by a class. Interfaces define a set of methods that must be implemented by any class that implements the interface.
+
+Interfaces are used to define a contract that must be followed by any class that implements the interface. They are also used to provide a level of abstraction between classes.
+
+An interface is a contract between a class and its subclasses that specify what methods must be implemented by the subclasses.
+
+Interfaces are typically used to define a set of methods that must be implemented by a class. For example, an interface might define a set of methods for sorting data. A class that implements the interface would then need to provide implementations for those methods.
+
+# Java Access Modifiers
+
+Java has four access modifiers: public, protected, private, and default.
+
+Public members are accessible from anywhere. Protected members are accessible from within the same package, as well as from subclasses. Private members are only accessible from within the same class. Default members are only accessible from within the same package.
+
+Protected means that the member can only be accessed by classes in the same package or subclasses in a different package. Default means that the member can only be accessed by classes in the same package.
 
 # OOP Paradigms
 
@@ -61,23 +89,6 @@ Spring MVC is a framework for building web applications. It handles all of the r
 
 Spring Boot is a framework for building production-ready applications. It provides a number of features, including an embedded Tomcat server and auto-configuration. Spring Boot is designed to be used in conjunction with an application server, such as WildFly or Tomcat.
 
-## Java Access Modifiers
-
-Java has four access modifiers: public, protected, private, and default.
-
-Public members are accessible from anywhere. Protected members are accessible from within the same package, as well as from subclasses. Private members are only accessible from within the same class. Default members are only accessible from within the same package.
-
-## Abstract Classes
-
-An abstract class is a class that cannot be instantiated. Abstract classes can contain both abstract and concrete methods. Abstract classes must be subclassed in order to be used.
-
-Abstract classes are used to provide a common base class for a group of classes. They are also used to provide default implementations of methods that can be overridden by subclasses.
-
-## Interfaces
-
-An interface is a type that can be implemented by a class. Interfaces define a set of methods that must be implemented by any class that implements the interface.
-
-Interfaces are used to define a contract that must be followed by any class that implements the interface. They are also used to provide a level of abstraction between classes.
 
 ## Design Patterns
 
