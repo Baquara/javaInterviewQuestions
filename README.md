@@ -95,3 +95,99 @@ Spring Boot is a framework for building production-ready applications. It provid
 There are four main design patterns in Java: Singleton, Factory, Decorator, and Observer.
 
 The Singleton pattern is used to ensure that only one instance of a class is created. The Factory pattern is used to create objects without exposing the logic for creating them. The Decorator pattern is used to add new functionality to existing objects. The Observer pattern is used to notify objects of changes to another object.
+
+
+Singleton:
+
+public class Coin {
+
+    private static final int ADD_MORE_COIN = 10;
+    private int coin;
+    private static Coin instance = new Coin(); // eagerly loads the singleton
+
+    private Coin() {
+        // private to prevent anyone else from instantiating
+    }
+
+    public static Coin getInstance() {
+        return instance;
+    }
+
+    public int getCoin() {
+        return coin;
+    }
+
+    public void addMoreCoin() {
+        coin += ADD_MORE_COIN;
+    }
+
+    public void deductCoin() {
+        coin--;
+    }
+}
+
+
+
+The Factory Pattern:
+
+public class Factory {
+   // An abstract factory has multiple methods that return
+   // different abstract products
+   public abstract Product1 createProduct1();
+   public abstract Product2 createProduct2();
+}
+
+
+The Observer Pattern:
+
+
+public class Main {
+  
+    public static void main(String[] args) {
+        
+        // create subject
+        MyTopic topic = new MyTopic();
+ 
+        // create observers
+        Observer obj1 = new MyTopicSubscriber("Obj1");
+        Observer obj2 = new MyTopicSubscriber("Obj2");
+        Observer obj3 = new MyTopicSubscriber("Obj3");
+ 
+        // register observers to the subject
+        topic.register(obj1);
+        topic.register(obj2);
+        topic.register(obj3);
+ 
+        // attach observer to subject
+        obj1.setSubject(topic);
+        obj2.setSubject(topic);
+        obj3.setSubject(topic);
+ 
+        // check if any update is available
+        obj1.update();
+ 
+        // now send message to subject
+        topic.postMessage("New Message");
+    }
+}
+
+
+The Decorator pattern:
+
+
+
+public class DecoratorPattern {
+  
+    public static void main(String[] args) {
+        Car sportsCar = new SportsCar(new BasicCar());
+        sportsCar.assemble();
+        System.out.println("\n*****");
+         
+        Car sportsLuxuryCar = new SportsCar(new LuxuryCar(new BasicCar()));
+        sportsLuxuryCar.assemble();
+    }
+  
+}
+
+
+
