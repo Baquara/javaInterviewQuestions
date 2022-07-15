@@ -10,6 +10,12 @@ Abstract classes are classes that cannot be instantiated, but can be subclassed.
 
 Abstract classes are typically used to define a base class from which other classes can inherit. For example, an abstract class might define a basic shape, with subclasses defining specific shapes like circles, squares, and triangles.
 
+Final method is a method that is marked as final, i.e. it cannot be overridden anymore. Just like final class cannot be inherited anymore.
+
+Abstract method, on the other hand, is an empty method that is ought to be overridden by the inherited class. Without overriding, you will quickly get compilation error.
+
+
+
 ## Interfaces
 
 An interface is a type that can be implemented by a class. Interfaces define a set of methods that must be implemented by any class that implements the interface.
