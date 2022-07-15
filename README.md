@@ -116,6 +116,8 @@ There are four main design patterns in Java: Singleton, Factory, Decorator, and 
 
 The Singleton pattern is used to ensure that only one instance of a class is created. The Factory pattern is used to create objects without exposing the logic for creating them. The Decorator pattern is used to add new functionality to existing objects. The Observer pattern is used to notify objects of changes to another object.
 
+On the Singleton pattern, in a multi-threaded environment, only one instance of the class created, and it is shared among all threads (it gets the instance from the first thread it is created). Since the instance of the other threads are not used, the memory occupied by those instances can be reclaimed by the garbage collector. Garbage collection is a process of reclaiming the memory occupied by objects that are no longer needed by the application.
+
 
 Singleton:
 
