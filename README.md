@@ -14,6 +14,8 @@ Final method is a method that is marked as final, i.e. it cannot be overridden a
 
 Abstract method, on the other hand, is an empty method that is ought to be overridden by the inherited class. Without overriding, you will quickly get compilation error.
 
+Java 8 has introduced the concept of default methods which allow the interfaces to have methods with implementation without affecting the classes that implement the interface.
+
 
 
 ## Interfaces
