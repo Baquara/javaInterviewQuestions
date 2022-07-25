@@ -14,8 +14,6 @@ Final method is a method that is marked as final, i.e. it cannot be overridden a
 
 Abstract method, on the other hand, is an empty method that is ought to be overridden by the inherited class. Without overriding, you will quickly get compilation error.
 
-Java 8 has introduced the concept of default methods which allow the interfaces to have methods with implementation without affecting the classes that implement the interface.
-
 
 
 ## Interfaces
@@ -27,6 +25,8 @@ Interfaces are used to define a contract that must be followed by any class that
 An interface is a contract between a class and its subclasses that specify what methods must be implemented by the subclasses.
 
 Interfaces are typically used to define a set of methods that must be implemented by a class. For example, an interface might define a set of methods for sorting data. A class that implements the interface would then need to provide implementations for those methods.
+
+Java 8 has introduced the concept of default methods which allow the interfaces to have methods with implementation without affecting the classes that implement the interface.
 
 # Java Access Modifiers
 
