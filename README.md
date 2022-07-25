@@ -1,3 +1,5 @@
+In a Java class, a static block is a set of instructions that is run only once when a class is loaded into memory. A static block is also called a static initialization block. This is because it is an option for initializing or setting up the class at run-time.
+
 # Abstract classses and interfaces
 
 ## Abstract Classes
