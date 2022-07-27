@@ -75,6 +75,15 @@ There are four main annotations in Spring: @Component, @Repository, @Service, an
 
 Each of these annotations has a corresponding XML element that can be used for configuring Spring beans.
 
+
+| Sr. No. | Key | @Bean | @Component |
+| --- | --- | --- | --- |
+| 1 | Auto detection | It is used to explicitly declare a single bean, rather than letting Spring do it automatically.  | If any class is annotated with @Component it will be automatically detect by using classpath scan. |
+| 2 | Spring Container | Bean can be created even class is outside the spring container | We can’t create bean if class is outside spring container |
+| 3 | Class/Method  Level Annotation | It is a method level annotation | It is a class level annotation |
+| 4 | @Configuration | It works only when class is also annotated with @Configuration | It works without@Configuration annotation |
+| 5 | Use Case | We should use @bean, if you want specific implementation based on dynamic condition. | We can’t write specific implementation based on dynamic condition |
+
 ## Spring bean
 
 A Spring bean is a Java object that is managed by the Spring IoC container (Inversion of Control is a principle in software engineering which transfers the control of objects or portions of a program to a container or framework). It is created and initialized during the container startup, and can be injected into other beans that are managed by the container.
