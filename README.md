@@ -73,6 +73,8 @@ There are four main annotations in Spring: @Component, @Repository, @Service, an
 
 @Controller -  is used for classes that are part of the Spring MVC framework.
 
+@Configuration - is used by Spring to designate a class as a configuration class. This class can be used to define beans and resolve dependencies.
+
 Each of these annotations has a corresponding XML element that can be used for configuring Spring beans.
 
 
@@ -238,4 +240,89 @@ public class DecoratorPattern {
 }
 
 
+## Java 8 vs Java 11
 
+There are a number of significant changes between Java 8 and Java 11. Some of the most notable changes include:
+
+- The removal of the Java EE and CORBA modules
+- The addition of a new module, java.se.ee, which includes all the Java EE and CORBA modules
+- The introduction of a new release cycle, where a new major release occurs every six months
+- The introduction of a new tool, jlink, which can create a custom runtime image containing only the modules required for a particular application
+- The addition of support for HTTP/2
+- The addition of a new default garbage collector, Garbage First (G1)
+- The addition of a new JVM, GraalVM, which can run applications written in a variety of languages
+- The addition of support for the Java Platform Module System (JPMS)
+
+### What Java 8 originally introduced?
+
+Write the most important additions from Java 8.
+
+
+
+
+- Lambda expressions
+- Stream API
+- Date and time API
+- Default methods
+- Optional class
+
+Write an example of Java Lambda expressions.
+
+(x, y) -> x + y
+
+Write an example of Java Stream API
+
+list.stream()
+    .filter(x -> x % 2 == 0)
+    .map(x -> x * x)
+    .forEach(System.out::println);
+
+
+This code filters a list of numbers, keeping only the even numbers. It then squares each of the remaining numbers, and finally prints them out.
+
+What Java 8 default method does?
+
+Java 8 default methods are methods in interfaces that have a default implementation. This allows for new methods to be added to interfaces without breaking existing code that implements the interface.
+
+What is an Optional class?
+
+
+The Optional class is a container class that represents a value that may or may not be present. It is used to avoid NullPointerException errors.
+
+Write an example of the Date and time API.
+
+
+LocalDateTime dt = LocalDateTime.now();
+System.out.println(dt);
+
+This code creates a LocalDateTime object that represents the current date and time.
+
+Write what is the Java Stream API.
+
+The Java Stream API is a set of tools that allow developers to manipulate collections of data in a declarative way. This can be used to perform operations such as filtering, mapping, and reducing.
+
+Write an example of an Optional class.
+
+
+Optional<String> str = Optional.of("Hello");
+System.out.println(str.isPresent());
+
+This code creates an Optional object that contains the string "Hello". The isPresent() method is used to check if the Optional object contains a value.
+
+Write a code using the default method.
+
+
+public interface MyInterface {
+    default void doSomething() {
+        System.out.println("Doing something");
+    }
+}
+
+public class MyClass implements MyInterface {
+    public static void main(String[] args) {
+        MyClass myClass = new MyClass();
+        myClass.doSomething();
+    }
+}
+
+This code implements an interface that has a default method. The MyClass class then calls the doSomething() method.
