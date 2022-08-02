@@ -331,85 +331,167 @@ This code implements an interface that has a default method. The MyClass class t
     
     
  what is event loop in js?
+    
 two sum  leetcode
+    
 **can constructor be private?**
+    
 **design a singleton**
+    
 **1. OOP: inheritance, polymorphism, abstraction**
+    
 **2. Spring and Hibernate**
+    
 **3. Singleton, observer, etc**
+    
 **What is CI/CD and DevOps?**
+    
 **Consider a program to remove duplicate characters**
+    
 **Questions on collection**
+    
 **throw vs throws**
+    
 **types of interface**
+    
 **How to delete all duplicate elements in a list and keep the list order unchanged.**
+    
 What is the purpose of static methods and variables?
+    
 What Is Factory Pattern?
+    
 What design pattern do you know? 
+    
 (1)oops concept
+    
 (2)Singleton
+    
 (3) Spring Framework
+    
 (4)Spring beans
+    
 (5)collection framework
+    
 Explain java collections, you can say as much as you want.
+    
 And concept of constructors and so on
+    
 How to sort data
+    
 What is Spring MVC
+    
 1)what is Singleton? and how can you implement
+    
 2)Hash Map?
+    
 3)Interface vs Abstract class?
+    
 4)Exception Handling?
+    
 Heap Memory
+    
 what is the difference between supervised learning and unsupervised learning
+    
 Java Core, Collection, Multithreading, Design Pattern, etc
+    
 Spring Framework concepts like IoC container, Annotations
+    
 Servlet concept, Database query concept, etc
+    
 Find all pairs in array that sum up to given number
+    
 Types of stlc, defect life cycle, debugging in JAVA, oops concept, applying different types of waits in selenium, type of models in SDLC. 
+    
 Hashmap, ArrayList vs LinkedList, static, singleton
+    
 In java, what is the difference between list and arraylist?
+    
 difference between comparator and comparable
+    
 Data Science: Case study , random forest, decision tree, logistic algorithm 
+    
 1) What are lambda expressions? Why are they used?
+    
 2) What is a functional interface?
+    
 3) What are the features of Java 7?
+    
 4) How is I18N implemented in spring boot?
+    
 5) How do you externalize properties in spring boot?
+    
 6) What will happen if you override equals but not hashcode?
+    
 7) Have you used Kafka?
+    
 8) Have you used ESB?
+    
 How to implement Singleton?
+    
 Final vs finally vs finalize
+    
 HashMap structure
+    
 What is HashCode?
+    
 Hashcode vs equals
+    
 Do you know JSP Hibernate etc?
+    
 Basic Java, OOPs,  LinkedList, HashMaps, etc.
+    
 overload vs override
+    
 what is an interface
+    
 Difference between Synchronized block and method?
+    
 What is the difference between abstraction class and interface.
+    
 What is static keyword.
+    
 1) What you mean by Inheritance?
+    
 2) What you mean by Abstract method?
+    
 3) Can we have a class without public?
+    
 4) Can we have a private class? How will you access the properties of that class?
+    
 5) How will you handle the exception without using try-catch block?
+    
 What is encapsulation?
+    
 What is arraylist?
+    
 Tell me the difference between method and constructor.
+    
 What's the difference between abstract class and interface?
+    
 What is exception?
+    
 What's the diff between override and overload?
+    
 what is different among private, public and protect? 
+    
 what is synchronized in Java?
+    
 What's the different between Object and Class?
+    
 What is the difference between errors and exceptions?
+    
 What is the difference between HashMap and HashTable?
+    
 Can you discribe collections in Java?
+    
 Can you discribe LinkedList in Java?
+    
 fibonacci series
+    
 Giving you an ArrayList that stores integer, find out the max and min value.
+    
 - Singleton, Facade and Factory design pattern
+    
 - What's dynamic binding?
+    
 In Java, what is an static variable?
