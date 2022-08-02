@@ -176,16 +176,16 @@ public class Coin {
 
 The Factory Pattern:
 
-public class Factory {
+    public class Factory {
 
-   // An abstract factory has multiple methods that return
-   // different abstract products
-   
-   public abstract Product1 createProduct1();
-   
-   public abstract Product2 createProduct2();
-   
-}
+       // An abstract factory has multiple methods that return
+       // different abstract products
+
+       public abstract Product1 createProduct1();
+
+       public abstract Product2 createProduct2();
+
+    }
 
 
 The Observer Pattern:
