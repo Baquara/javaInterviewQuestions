@@ -335,28 +335,71 @@ This code implements an interface that has a default method. The MyClass class t
 two sum  leetcode
     
 **can constructor be private?**
+
+Yes, a constructor can be private, so when we declare a private contructor, we cannot create an object out of the class; We can use this private constructor when using the Singleton pattern.
     
 **design a singleton**
+
+        public class Test{
+
+        private Test(){
+
+
+        }
+
+
+        }
+
     
 **1. OOP: inheritance, polymorphism, abstraction**
+
+Inheritance is when a class extends a (parent) class, polymorphism is when you can use methods from a parent class in different ways (by overloading or overriding)
+
     
 **2. Spring and Hibernate**
+    
+    Hibernate is Spring's ORM.
     
 **3. Singleton, observer, etc**
     
 **What is CI/CD and DevOps?**
     
 **Consider a program to remove duplicate characters**
+
+You can remove duplicate characters by using set.
     
 **Questions on collection**
+
+The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects. Java Collections can achieve all the operations that you perform on a data such as searching, sorting, insertion, manipulation, and deletion. Java Collection means a single unit of objects.
+
     
 **throw vs throws**
+
+The throws keyword is used to declare which exceptions can be thrown from a method, while the throw keyword is used to explicitly throw an exception within a method or block of code.
     
 **types of interface**
+
+ 1. Functional Interface:
+Functional Interface is an interface that has only pure one abstract method.
+It can have any number of static and default methods and also even public methods of java.lang.Object classes
+
+2. Marker Interface:
+An interface that does not contain any methods, fields, Abstract Methods, and any Constants is Called a Marker interface.
+Also, if an interface is empty, then it is known as Marker Interface.
+The Serializable and the Cloneable interfaces are examples of Marker interfaces.
+
+2. Serializable Interface:
+
+It is a marker interface in Java that is defined in the java.io package. If we want to make the class serializable, we must implement the Serializable interface. If a class implements the Serializable interface, we can serialize or deserialize the state of an object of that class.
+Serialization is a mechanism in which our object state is ready from memory and written into a file or from the databases.
+Deserialization- is the opposite of serialization means that object state reading from a file or database and written back into memory is called deserialization of an object.
+
     
 **How to delete all duplicate elements in a list and keep the list order unchanged.**
     
-What is the purpose of static methods and variables?
+**What is the purpose of static methods and variables?**
+
+In Java, static keyword is mainly used for memory management. It can be used with variables, methods, blocks and nested classes. It is a keyword which is used to share the same variable or method of a given class. Basically, static is used for a constant variable or a method that is same for every instance of a class
     
 What Is Factory Pattern?
     
@@ -382,13 +425,18 @@ What is Spring MVC
     
 1)what is Singleton? and how can you implement
     
-2)Hash Map?
+**2)Hash Map?**
+
+Java HashMap is a hash table based implementation of Java's Map interface. A Map, as you might know, is a collection of key-value pairs. It maps keys to values. Following are few key points to note about HashMaps in Java - A HashMap cannot contain duplicate keys.
     
 3)Interface vs Abstract class?
     
 4)Exception Handling?
     
-Heap Memory
+**Heap Memory**
+
+The Java heap is the area of memory used to store objects instantiated by applications running on the JVM. When the JVM is started, heap memory is created and any objects in the heap can be shared between threads as long as the application is running.
+
     
 what is the difference between supervised learning and unsupervised learning
     
@@ -402,21 +450,39 @@ Find all pairs in array that sum up to given number
     
 Types of stlc, defect life cycle, debugging in JAVA, oops concept, applying different types of waits in selenium, type of models in SDLC. 
     
-Hashmap, ArrayList vs LinkedList, static, singleton
+**Hashmap, ArrayList vs LinkedList, static, singleton**
+
+ArrayList internally uses a dynamic array to store its elements. LinkedList uses Doubly Linked List to store its elements. ArrayList is slow as array manipulation is slower. LinkedList is faster being node based as not much bit shifting required.
+ArrayList provides constant time for search operation, so it is better to use ArrayList if searching is more frequent operation than add and remove operation. The LinkedList provides constant time for add and remove operations. So it is better to use LinkedList for manipulation.
+
     
-In java, what is the difference between list and arraylist?
+**In java, what is the difference between list and arraylist?**
+
+ArrayList class is used to create a dynamic array that contains objects. List interface creates a collection of elements that are stored in a sequence and they are identified and accessed using the index. ArrayList creates an array of objects where the array can grow dynamically.
+List is always faster than ArrayList.
+
+
     
-difference between comparator and comparable
+**difference between comparator and comparable**
+    Comparable interface is used to sort the objects with natural ordering. Comparator in Java is used to sort attributes of different objects. Comparable interface compares “this” reference with the object specified. Comparator in Java compares two different class objects provided.
+    
     
 Data Science: Case study , random forest, decision tree, logistic algorithm 
     
 1) What are lambda expressions? Why are they used?
     
 2) What is a functional interface?
+
+A functional interface is an interface that contains only one abstract method. They can have only one functionality to exhibit. From Java 8 onwards, lambda expressions can be used to represent the instance of a functional interface. A functional interface can have any number of default methods. Runnable, ActionListener, Comparable are some of the examples of functional interfaces. 
+
+
     
 3) What are the features of Java 7?
     
-4) How is I18N implemented in spring boot?
+**4) How is I18N implemented in spring boot?**
+
+Internationalization or I18N is a process that makes your application adaptable to different languages and regions without engineering changes on the source code. You can display messages, currencies, date, time etc. according to the specific region or language, likewise you can say internationalization is a readiness of localization.
+
     
 5) How do you externalize properties in spring boot?
     
@@ -433,8 +499,15 @@ Final vs finally vs finalize
 HashMap structure
     
 What is HashCode?
+
+A hashcode is an integer value associated with every object in Java, facilitating the hashing in hash tables.
+The equals() and hashcode() are the two important methods provided by the Object class for comparing objects. Since the Object class is the parent class for all Java objects, hence all objects inherit the default implementation of these two methods.
     
 Hashcode vs equals
+
+The hashcode() method returns the same hash value when called on two objects, which are equal according to the equals() method. And if the objects are unequal, it usually returns different hash values.
+If two objects are the same as per the equals(Object) method, then if we call the hashCode() method on each of the two objects, it must provide the same integer result.
+
     
 Do you know JSP Hibernate etc?
     
@@ -445,6 +518,8 @@ overload vs override
 what is an interface
     
 Difference between Synchronized block and method?
+
+A synchronized method provides a lock corresponding to object-level or Class level ( i.e class level means static method ), whereas, synchronized block provides a lock on any object depending on the parameter
     
 What is the difference between abstraction class and interface.
     
@@ -475,12 +550,17 @@ What's the diff between override and overload?
 what is different among private, public and protect? 
     
 what is synchronized in Java?
+
+Synchronization in java is the capability to control the access of multiple threads to any shared resource. In the Multithreading concept, multiple threads try to access the shared resources at a time to produce inconsistent results. The synchronization is necessary for reliable communication between threads
     
 What's the different between Object and Class?
     
 What is the difference between errors and exceptions?
     
 What is the difference between HashMap and HashTable?
+
+One of the major differences between HashMap and Hashtable is that HashMap is non-synchronized whereas Hashtable is synchronized, which means Hashtable is thread-safe and can be shared between multiple threads but HashMap can not be shared between multiple threads without proper synchronization.
+HashMap allows one null key and multiple null values whereas Hashtable doesn't allow any null key or value. HashMap is generally preferred over HashTable if thread synchronization is not needed
     
 Can you discribe collections in Java?
     
